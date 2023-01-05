@@ -46,7 +46,7 @@ clasificacion <- "https://www.acb.com/resultados-clasificacion/ver/temporada_id/
 
 # tabla con los resultados
 
-iddf_df <- read.csv("PlayByPlay/iddf_df23.csv") |>
+iddf_df <- read.csv("https://raw.githubusercontent.com/IvoVillanueva/csv2023/main/iddf_df23.csv") |>
   filter(id_phase == 107) |>
   select(id_match = id, id_phase, local_team = local_team_team_abbrev_name, visitor_team = visitor_team_team_abbrev_name, score_local, score_visitor, matchweek_number)
 
