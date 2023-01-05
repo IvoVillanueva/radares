@@ -28,7 +28,7 @@ tm_acb <- read.csv("https://raw.githubusercontent.com/IvoVillanueva/csv2023/main
 
 # listado de jugadores con sus fotos
 
-caras <- read.csv("jugadores_2023.csv") |>
+caras <- read.csv("https://raw.githubusercontent.com/IvoVillanueva/csv2023/main/caras.csv") |>
   select(jugador = nombre, foto) |> # adapto los nombres para que luego sea mas facil unir las tablas
   mutate(foto = ifelse(!str_detect(foto, "https:"), paste0("https:", foto), foto)) # algunos enlaces vienen sin el https
 
